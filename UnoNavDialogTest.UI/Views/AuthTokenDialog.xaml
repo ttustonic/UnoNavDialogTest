@@ -1,0 +1,30 @@
+﻿<ContentDialog
+    x:Class="UnoNavDialogTest.Views.AuthTokenDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uen="using:Uno.Extensions.Navigation.UI"
+    xmlns:android="http://uno.ui/android"
+    xmlns:win="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:not_win="http://uno.ui/not_win"
+    
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="TITLE"
+    PrimaryButtonText="Save"
+    CloseButtonText="Cancel"
+    android:PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
+    win:PrimaryButtonCommand="{Binding SaveCommand}"
+    mc:Ignorable="android not_win"    
+    >
+
+    <StackPanel>
+        <TextBlock Text="Enter auth token" />
+        <TextBox x:Name="authToken"
+            Text="{Binding AuthToken, Mode=TwoWay}"/>
+        <Button Content="Back nav" 
+                uen:Navigation.Request="-"
+                uen:Navigation.Data="{Binding ElementName=authToken, Path=Text}" />
+        <Button Content="Back command" 
+                Command="{Binding SaveCommand}" />
+
+    </StackPanel>
+</ContentDialog>

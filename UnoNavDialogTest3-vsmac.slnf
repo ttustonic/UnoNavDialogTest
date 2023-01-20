@@ -1,0 +1,12 @@
+{
+  "solution": {
+    "path": "UnoNavDialogTest3.sln",
+    "projects": [
+      "UnoNavDialogTest3.Mobile\\UnoNavDialogTest3.Mobile.csproj",
+      "UnoNavDialogTest3.Skia.Gtk\\UnoNavDialogTest3.Skia.Gtk.csproj",
+      "UnoNavDialogTest3.UI\\UnoNavDialogTest3.UI.shproj",
+      "UnoNavDialogTest3.Wasm\\UnoNavDialogTest3.Wasm.csproj",
+      "UnoNavDialogTest3\\UnoNavDialogTest3.csproj"
+    ]
+  }
+}

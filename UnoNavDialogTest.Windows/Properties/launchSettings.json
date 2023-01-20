@@ -1,0 +1,7 @@
+{
+  "profiles": {
+	"UnoNavDialogTest.Windows (Package)": {
+	  "commandName": "MsixPackage"
+	}
+  }
+}
