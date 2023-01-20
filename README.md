@@ -1,4 +1,4 @@
-# UnoNavDialogTest3
+# UnoNavDialogTest
 
 An example for binding ContentDialog with Uno platform navigation on Android.
 
